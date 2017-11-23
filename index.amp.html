@@ -1,63 +1,121 @@
 <!doctype html>
 <html amp>
-<head>
-  <meta charset="utf-8">
-  <link rel="canonical" href="self.html" />
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fredoka+One" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <style amp-custom>
-    h1{
-        font-family: Georgia;
-    }
-    h2{
-        font-family: 'Fredoka One', cursive;
-    }
-    p {
-        font-family: 'Crimson Text', serif;
-    }
-    .social{
-        margin: auto;
-        width: 200px;
-    }
-    .menu {
-        font-size: 1.5rem;
-        width: 100%;
-        text-align: left;
-        border-style: solid;
-        border-bottom: thin solid grey;
-    }
-    amp-sidebar > h4 {
-        text-align: center;
-    }
-    amp-sidebar{
-        width: 150px;
-        background: palegoldenrod;
-    }
 
-    /* AMP Fav Button style */
-    input[type=submit] {
-        width: 48px;
-        height: 48px;
-        cursor: pointer;
-        border: none;
-        margin: 4px;
-        transition: background 300ms ease-in-out;
-      }
-    .heart-fill {
-        background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
-      }
-    .heart-border {
-        background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>');
-    }
-    /* While the page loads we show a grey heart icon to indicate that the functionality is not yet available. */
-    .heart-loading,
-    .heart-loading[placeholder] {
-        background: url('data:image/svg+xml;utf8,<svg fill="#cccccc" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>');
-    }
-  </style>
-  
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="self.html" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fredoka+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+        h1 {
+            font-family: Georgia;
+        }
+
+        h2 {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        p {
+            font-family: 'Crimson Text', serif;
+        }
+
+        .social {
+            margin: auto;
+            width: 200px;
+        }
+
+        .menu {
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: left;
+            border-style: solid;
+            border-bottom: thin solid grey;
+        }
+
+        amp-sidebar>h4 {
+            text-align: center;
+        }
+
+        amp-sidebar {
+            width: 150px;
+            background: palegoldenrod;
+        }
+
+        /* amp-list overflow style */
+
+        .list-overflow[overflow] {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #DCDCDC;
+        }
+    </style>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
 
     <!--AMP Youtube video script-->
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
@@ -67,109 +125,84 @@
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <!--AMP Sidebar script-->
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-
-    <!--AMP Fav Button-->
+    <!--AMP List script -->
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <!--AMP Mustache script -->
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 
 </head>
 
 <body>
 
     <!--Start AMP sidebar-->
-        <button on="tap:sidebar.toggle"
-        class="button-text menu">☰ Menu</button>
+    <button on="tap:sidebar.toggle" class="button-text menu">☰ Menu</button>
 
-        <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
-            <button on="tap:sidebar.close" class="button-text">X</button>
-            <h4>About</h4>
-            <h4>Adoptions</h4>
-        </amp-sidebar>
+    <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
+        <button on="tap:sidebar.close" class="button-text">X</button>
+        <h4>About</h4>
+        <h4>Adoptions</h4>
+    </amp-sidebar>
 
-     <!--End AMP sidebar-->
+    <!--End AMP sidebar-->
 
-  <h1>Welcome to CorgiWorld</h1>
-  <p>Puppy kitty ipsum dolor sit good dog spike park field smooshy vitamins purr play stick fish dog. Left Paw run fast feathers water scratch cockatiel roll over foot aquarium aquatic cage furry running fish stay pet. </p>
+    <h1>Welcome to CorgiWorld</h1>
+    <p>Puppy kitty ipsum dolor sit good dog spike park field smooshy vitamins purr play stick fish dog. Left Paw run fast feathers
+        water scratch cockatiel roll over foot aquarium aquatic cage furry running fish stay pet. </p>
 
-  <!--Start AMP Youtube video player-->
-    <amp-youtube layout="responsive" 
-        data-videoid="Wvt_K4LW29c"
-        width=300
-        height=250
-        autoplay>
+    <!--Begin AMP List-->
+    <h2>Corgis available for adoption</h2>
+    <amp-list width="auto" height="400" layout="fixed-height" src="https://adopt-a-corgi-api.herokuapp.com/favorites">
+        <div placeholder>Loading ...</div>
+        <div fallback>Failed to load data.</div>
+
+        <template type="amp-mustache">
+            <h3>Take {{name}} home 🐶</h3>
+            <amp-img tabindex="0" layout="responsive" src={{url}} width="30vw" height="20vw" alt="Picture of {{name}}" title="Picture of {{name}}">
+                <div fallback>offline</div>
+            </amp-img>
+            <ul>
+                <li>Gender: {{gender}}</li>
+                <li>Birthday: {{birthday}}</li>
+                <li>Vaccinated: {{vaccinated}}</li>
+            </ul>
+            <br>
+        </template>
+        <div overflow class="list-overflow">
+            See more listings
+        </div>
+    </amp-list>
+    <hr>
+    <!--End AMP List-->
+
+    <!--Start AMP Youtube video player-->
+    <amp-youtube layout="responsive" data-videoid="Wvt_K4LW29c" width=300 height=250 autoplay>
     </amp-youtube>
     <!--End AMP Youtube video player-->
 
-  <h2>Meet our corgi pups!</h1>  
+    <h2>Meet our corgi pups!</h2>
 
-  <!--Star AMP img lightbox-->
+    <!--Star AMP img lightbox-->
     <figure>
-        <amp-img on="tap:lightbox1"
-            role="button"
-            tabindex="0"
-            layout="responsive"
-            src="http://placecorgi.com/300/250"
-            width="300"
-            height="250"
-            alt="Picture of a corgi"
-            title="Picture of a corgi, view in lightbox">
+        <amp-img on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="http://placecorgi.com/300/250" width="300"
+            height="250" alt="Picture of a corgi" title="Picture of a corgi, view in lightbox">
             <div fallback>offline</div>
         </amp-img>
 
-        <figcaption id="caption1">I'm a cute corgi!</figcaption><!-- Optional caption -->
+        <figcaption id="caption1">I'm a cute corgi!</figcaption>
+        <!-- Optional caption -->
     </figure>
 
     <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
     <!--End AMP img lightbox-->
 
-    <!--Begin AMP Fav Button-->
-    <h1>Here's the Fav button</h1>
-    <amp-state id="favorite"
-               credentials="include"
-               src="https://ampbyexample.com/favorite">
-   </amp-state>
-
-    <form method="post"
-          action-xhr="https://ampbyexample.com/favorite"
-          target="_top"
-          on="submit:AMP.setState({favorite: !favorite}),favorite-failed-message.hide; 
-            submit-error:AMP.setState({favorite: !favorite}),favorite-failed-message.show">
-    
-      <amp-list width="56"
-      height="56"
-      credentials="include"
-      items="."
-      single-item
-      src="https://ampbyexample.com/favorite">
-      <template type="amp-mustache">
-        
-        <input type="submit"
-          [class]="favorite ? 'heart-fill' : 'heart-border'"
-          value=""
-          aria-label="Favorite Toggle">
-      </template>
-      <input type="submit"
-        disabled
-        class="heart-loading"
-        value=""
-        aria-label="favorite placeholder"
-        placeholder>
-    </amp-list>
-  </form>
-
-<!-- End AMP Fav Button -->
-
     <!--Start AMP Social Buttons-->
     <div class="social">
         <amp-social-share type="email"></amp-social-share>
-        <amp-social-share type="facebook"
-        data-param-app_id="254325784911610"></amp-social-share>
-        <amp-social-share type="twitter"
-        data-param-text="Check out this Corgi"></amp-social-share>
+        <amp-social-share type="facebook" data-param-app_id="254325784911610"></amp-social-share>
+        <amp-social-share type="twitter" data-param-text="Check out this Corgi"></amp-social-share>
     </div>
     <!--End AMP Social Buttons-->
 
-    </body>
+</body>
+
 </html>
