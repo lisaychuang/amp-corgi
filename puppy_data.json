@@ -6,28 +6,32 @@
             "breed": "Pembroke Welsh Corgi",
             "birthday": "10/27/2017",
             "vaccinated": true,
-            "gender": "male"
+            "gender": "male",
+            "url": "/img/Fred1.png"
         },
         {
             "name": "Babe",
             "breed": "Pembroke Welsh Corgi",
             "birthday": "10/18/2017",
             "vaccinated": true,
-            "gender": "female"
+            "gender": "female",
+            "url": "/img/Babe1.png"
         },
         {
             "name": "Sire",
             "breed": "Pembroke Welsh Corgi",
             "birthday": "10/18/2012",
             "vaccinated": true,
-            "gender": "female"
+            "gender": "female",
+            "url": "/img/Sire1.png"
         },
         {
             "name": "Biscuit",
             "breed": "Pembroke Welsh Corgi",
             "birthday": "10/01/2017",
             "vaccinated": true,
-            "gender": "male"
+            "gender": "male",
+            "url": "/img/Biscuit1.png"
         }
     ]
 }
